@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" th:fragment="navigation">
+  <div class="container-fluid">
+    <a href="/" class="navbar-brand">Currency Converter</a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav">
+        <a href="/converter/getnames" class="nav-item nav-link">Converter</a>
+        <a href="/currencies/getAll" class="nav-item nav-link">Currency list</a>
+        <a href="/currencyconverter/getCurrentUserCurrencyLog" class="nav-item nav-link">My Currency log</a>
+      </div>
+      <div class="navbar-nav ms-auto">
+        <a href="/logout" class="nav-item nav-link">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>
